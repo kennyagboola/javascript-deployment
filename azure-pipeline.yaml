@@ -13,10 +13,10 @@ stages:
     displayName: Build
     steps:
       - checkout: self
-    - task: PublishPipelineArtifact@1
-      inputs:
-        targetPath: $(System.DefaultWorkingDirectory)/bin/WebApp
-        artifactName: WebApp
+      - task: PublishPipelineArtifact@1
+        inputs:
+          targetPath: $(System.DefaultWorkingDirectory)/bin/WebApp
+          artifactName: WebApp
 - stage: Dockerize
   displayName: Dockerize Stage
   jobs:
