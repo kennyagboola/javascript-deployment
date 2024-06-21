@@ -16,7 +16,6 @@ stages:
       inputs:
         targetPath: $(System.DefaultWorkingDirectory)/bin/WebApp
         artifactName: WebApp
-    steps:
       - checkout: self
 - stage: Dockerize
   displayName: Dockerize Stage
