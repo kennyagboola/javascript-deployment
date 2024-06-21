@@ -3,7 +3,7 @@
 FROM node:12.18.1
 ENV NODE_ENV=production
 
-COPY ["package.json", "app/package-lock.json*", "./"]
+COPY ["app/package.json", "app/package-lock.json*", "./"]
 
 RUN npm install --production
 
